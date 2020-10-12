@@ -15,10 +15,11 @@ public class Batty : MonoBehaviour
     public GameObject gameOver;
 
     public AudioSource canalAudio;
-
     public AudioClip sonidoPuntos;
     public AudioClip sonidoMuerte;
     public AudioClip sonidoFuerza;
+
+    public GameObject prefabPum;
 
     // Start is called before the first frame update
     void Start()
@@ -49,8 +50,7 @@ public class Batty : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Obstaculo")){
-            Destroy(gameObject);
-            canalAudio.PlayOneShot(sonidoMuerte);
+            EfectoPum(collision.transform);
         } else
         {
             SumarPuntos();
@@ -69,6 +69,17 @@ public class Batty : MonoBehaviour
             PlayerPrefs.SetInt("RecordCache", contador);
             cajaRecords.text = record.ToString();
         }
+
+    }
+
+    void EfectoPum( Transform padre)
+    {
+        GameObject clone = Instantiate(prefabPum, this.transform.position, this.transform.rotation);
+        clone.transform.SetParent(padre);
+
+        Destroy(clone, 0.7f);
+        Destroy(gameObject);
+        canalAudio.PlayOneShot(sonidoMuerte);
 
     }
 }
