@@ -12,6 +12,8 @@ public class Batty : MonoBehaviour
     int record;
     public Text cajaRecords;
 
+    public GameObject gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class Batty : MonoBehaviour
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
+        gameOver.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
