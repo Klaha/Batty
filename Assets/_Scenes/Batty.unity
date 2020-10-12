@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 207304819}
   - component: {fileID: 207304818}
+  - component: {fileID: 207304820}
   m_Layer: 0
   m_Name: Nubes
   m_TagString: Untagged
@@ -202,6 +203,19 @@ Transform:
   m_Father: {fileID: 389943819}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &207304820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207304817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472817402d2ea9f4e8d02b5319d3b7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadFondo: 1
 --- !u!1 &262942630
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 262942632}
   - component: {fileID: 262942631}
+  - component: {fileID: 262942633}
   m_Layer: 0
   m_Name: Fondo4
   m_TagString: Untagged
@@ -283,6 +298,19 @@ Transform:
   m_Father: {fileID: 389943819}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262942633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262942630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472817402d2ea9f4e8d02b5319d3b7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadFondo: 4
 --- !u!1 &377203108
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377203110}
   - component: {fileID: 377203109}
+  - component: {fileID: 377203111}
   m_Layer: 0
   m_Name: Fondo3
   m_TagString: Untagged
@@ -364,6 +393,19 @@ Transform:
   m_Father: {fileID: 389943819}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377203111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377203108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472817402d2ea9f4e8d02b5319d3b7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadFondo: 3
 --- !u!1 &389943818
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610179481}
   - component: {fileID: 610179480}
+  - component: {fileID: 610179482}
   m_Layer: 0
   m_Name: Fondo2
   m_TagString: Untagged
@@ -480,6 +523,19 @@ Transform:
   m_Father: {fileID: 389943819}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &610179482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610179479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472817402d2ea9f4e8d02b5319d3b7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadFondo: 2
 --- !u!1 &861430248
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861430250}
   - component: {fileID: 861430249}
+  - component: {fileID: 861430251}
   m_Layer: 0
   m_Name: Fondo5
   m_TagString: Untagged
@@ -561,6 +618,19 @@ Transform:
   m_Father: {fileID: 389943819}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &861430251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861430248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472817402d2ea9f4e8d02b5319d3b7cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadFondo: 5
 --- !u!1 &1188185671
 GameObject:
   m_ObjectHideFlags: 0
