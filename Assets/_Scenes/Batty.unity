@@ -1009,6 +1009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1304606424}
   cajaPuntuacion: {fileID: 1156173239}
+  cajaRecords: {fileID: 1171865013}
 --- !u!58 &1304606429
 CircleCollider2D:
   m_ObjectHideFlags: 0

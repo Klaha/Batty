@@ -9,11 +9,16 @@ public class Batty : MonoBehaviour
     int contador;
     public Text cajaPuntuacion;
 
+    int record;
+    public Text cajaRecords;
+
     // Start is called before the first frame update
     void Start()
     {
         fuerza = 5;
         contador = 0;
+        record = PlayerPrefs.GetInt("RecordCache", 0);
+        cajaRecords.text = record.ToString();
     }
 
     // Update is called once per frame
@@ -45,5 +50,12 @@ public class Batty : MonoBehaviour
     {
         contador++;
         cajaPuntuacion.text = contador.ToString();
+        if(contador > record)
+        {
+            record = contador;
+
+            PlayerPrefs.SetInt("RecordCache", contador);
+            cajaRecords.text = record.ToString();
+        }
     }
 }
