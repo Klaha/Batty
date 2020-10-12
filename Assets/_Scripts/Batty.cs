@@ -14,6 +14,12 @@ public class Batty : MonoBehaviour
 
     public GameObject gameOver;
 
+    public AudioSource canalAudio;
+
+    public AudioClip sonidoPuntos;
+    public AudioClip sonidoMuerte;
+    public AudioClip sonidoFuerza;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,7 @@ public class Batty : MonoBehaviour
         {
             // (0,1) * fuerza.
             rb2d.velocity = Vector2.up * fuerza;
+            canalAudio.PlayOneShot(sonidoFuerza);
         }
     }
 
@@ -43,6 +50,7 @@ public class Batty : MonoBehaviour
     {
         if (collision.CompareTag("Obstaculo")){
             Destroy(gameObject);
+            canalAudio.PlayOneShot(sonidoMuerte);
         } else
         {
             SumarPuntos();
@@ -52,6 +60,7 @@ public class Batty : MonoBehaviour
     void SumarPuntos()
     {
         contador++;
+        canalAudio.PlayOneShot(sonidoPuntos);
         cajaPuntuacion.text = contador.ToString();
         if(contador > record)
         {
@@ -60,5 +69,6 @@ public class Batty : MonoBehaviour
             PlayerPrefs.SetInt("RecordCache", contador);
             cajaRecords.text = record.ToString();
         }
+
     }
 }
